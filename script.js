@@ -4,7 +4,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     // Target Sports Arena URL
-    const TARGET_URL = 'https://bvvsp-sports-arena.vercel.app';
+    const TARGET_URL = 'https://bvvs-sports-arena.vercel.app/';
 
     // Elements
     const enterBtn = document.getElementById('enter-arena-btn');
