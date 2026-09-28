@@ -90,10 +90,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 warpOverlay.classList.add('active');
             }
 
-            // Smooth delay to appreciate transition before opening
+            // Open in new tab after transition
             setTimeout(() => {
-                window.location.href = TARGET_URL;
-            }, 800);
+                window.open(TARGET_URL, '_blank');
+                // Reset warp overlay after launching new tab
+                setTimeout(() => {
+                    if (warpOverlay) {
+                        warpOverlay.classList.remove('active');
+                    }
+                }, 600);
+            }, 600);
         });
     }
 
